@@ -18,9 +18,23 @@
     "extends": [
       "wesbos"
     ],
+    "scripts": {
+      "lint": "eslint .",
+      "lint:fix": "eslint . --fix"
+    },
     "rules": {
       "react/prop-types": 0,
-      "react/jsx-props-no-spreading": 0
+      "react/jsx-props-no-spreading": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true,
+          "semi": false,
+          "printWidth": 120,
+          "tabWidth": 4
+        }
+      ]
     }
   },
   "dependencies": {
